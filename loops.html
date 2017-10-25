@@ -5,7 +5,80 @@
 	<title>javascript loops</title>
 </head>
 <body>
-	
+	<p id ="answer"> </p>
+	<script>
+
+		for (var i = 0; i < 10; i++) {
+			document.write(i);
+			console.dir(i);
+		}
+		
+		// setTimeout displays an alert box after 3 seconds
+		// setInterval repeats the alert every 3 seconds
+		//	setInterval(function(){
+
+		//		alert("hello"); },
+		//		3000);
+
+		setTimeout(function(){
+
+			alert("hello"); },
+			3000);
+
+
+
+
+		// var scores = [24, 32, 17]; // array of scores
+		// var arrayLength = scores.length; // items in array
+		// var roundNumber = 0; // current round
+		// var msg = '';	// message
+
+		// // loop through the items in the array 
+		// for (var i = 0; i < arrayLength; i++) {
+
+		// 	// Arrays are zero based (so 0 is round 1)
+		// 	// Add 1 to the current round
+		// 	roundNumber = (i + 1);
+
+		// 	// write the current round to message
+		// 	msg += 'Round ' + roundNumber + ': ';
+
+		// 	// Get the score from the scores array
+		// 	msg += scores [i] + '<br />';
+
+		// 	shout();
+		// }
+
+		// function shout() {
+		// 	alert('Shout');
+		// }
+
+		// document.getElementById('answer').innerHTML = msg;
+
+		// var i = 1;       // Set counter to 1
+		// var msg = '';    // Message
+
+		// // Store 5 times table in a variable
+		// while (i < 10) {
+		//   msg += i + ' x 5 = ' + (i * 5) + '<br />';
+		//   i++;
+		// }
+
+		// document.getElementById('answer').innerHTML = msg;
+
+		var i = 12;       // Set counter to 1
+		var msg = '';    // Message
+
+		// Store 5 times table in a variable
+		do {
+		  msg += i + ' x 5 = ' + (i * 5) + '<br />';
+		  i++;
+		} while (i < 1); 
+		// Note how this is already 1 and it still runs
+
+		document.getElementById('answer').innerHTML = msg;
+
+	</script>
 	
 </body>
 </html>
