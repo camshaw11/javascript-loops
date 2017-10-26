@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loops again</title>
+</head>
+<body>
+	<h1 class= "loremOne"> joji </h1>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nesciunt sequi excepturi, accusantium molestiae sint necessitatibus quidem rerum nulla officiis perferendis obcaecati ipsa, fugit ducimus velit adipisci commodi, saepe unde! </p>
+
+	<ul>
+		<li> list 1</li>
+		<li> list 2</li>
+		<li> list 3</li>
+		<li> list 4</li>
+		<li> list 5</li>
+	</ul>
+
+	<script>
+	// breakdown of the for conditions:
+	// for ([initialExpression]; [condition]; [incrementExpression])
+	// var step;
+	// for (step = 0; step < 5; step++) {
+	// 	// runs 5 times, with values of step 0 through 4.
+	// 	console.log('Walking east one step');
+	// }
+
+	// var all = document.getElementsByTagName('*');
+	// for (var i=0, max=all.length; i < max; i++) {
+	// 	// Do something with the element here
+	// 	console.log();
+	// 	all[i].style.color = 'blue';
+	// 	all[i].style.fontSize= '100px';
+	// }
+
+	// console.dir(all)
+
+	var className = document.getElementsByClassName('loremOne');
+	for (var i=0, max=className.length; i < max; i++) {
+		// Do something with the element here
+		className[i].style.color = 'red';
+		className[i].style.fontSize= '100px';
+	}
+
+	console.dir(className)
+
+
+	var shoppingCart = [
+	{item: 'soap',price: 4.99},
+	{item: 'hammer', price: 19.60},
+	{item: 'tissues', price: 2.95},
+	];
+
+	// we waant to create an array of prices only
+	// i.e data conversion/ re-structuring
+
+	var prices =[];
+	for (let i = 0,length = shoppingCart.length; i < length; i++) {
+		prices.push(shoppingCart[i].price);
+	}
+	console.log(prices); // 14.99, 19.60, 2.95
+
+
+
+	</script>
+</body>
+</html>
